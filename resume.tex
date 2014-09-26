@@ -1,0 +1,93 @@
+\documentclass[12pt,a4paper]{moderncv}
+\moderncvtheme[blue]{classic}
+\usepackage[utf8]{inputenc}
+\usepackage[scale=.6,margin=.5in,top=.3in]{geometry}
+\usepackage{multicol}
+\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}
+\AtBeginDocument{\recomputelengths}
+
+\AfterPreamble{
+    \hypersetup{
+      pdfauthor={Stefan Eng},
+      pdftitle={Stefan Eng Resume},
+      pdfsubject={Stefan Eng Resume},
+      colorlinks,
+      breaklinks,
+      urlcolor=blue
+    }
+}
+
+% personal data
+\firstname{Stefan}
+\familyname{Eng}
+\phone{(818) 331-5307}
+\email{stefaneng13@gmail.com}
+\address{3517 Brookhill Street}{La Crescenta, CA 91214}
+%\extrainfo{\href{https://github.com/stefaneng}{github.com/stefaneng}}
+
+
+\nopagenumbers{}
+
+\begin{document}
+\maketitle
+
+\section{Education}
+\cventry{2011--Current}{Mathematics B.S. \& Computer Science B.S., Expected Fall 2015}{\newline California State University}{Northridge}{GPA: \textbf{3.48}}{}
+\cventry{2007--2011}{High School Diploma}{\newline Crescenta Valley High School}{La Crescenta}{}{}
+
+\section{Experience}
+
+\cventry{Sep 2013 - Current}{Software Developer, Intern}{Caltech/JPL}{Pasadena}{}{
+%\textit{Academic Part Time} - Software developer for the Microwave Limb Sounder(MLS) mission. 
+\begin{itemize}
+\item Processed atmospheric data with Python and IDL.
+\item Maintained and improved the MLS website with PHP and Javascript.
+\item Automated repetitive tasks in data processing pipeline with bash scripts.
+\item Set up and administered an SVN server, served through Apache.
+\end{itemize}
+}
+
+\cventry{June 2013 - Aug 2013}{Data Scientist, Intern}{Caltech/JPL}{Pasadena}{}{
+%\textit{Intern} - 
+\begin{itemize}
+\item Assisted different projects and created many high visibility prototypes to help describe and visualize data to supplement research. 
+\item Used cloud technologies such as Amazon AWS to store and process data.
+\item Weekly presentations of our data visualizations attracted many guests to our room including the director of JPL, Dr. Charles Elachi.
+\item Worked with R, Python, Perl, for data analysis and visualizations.
+\item Wrote a Node.js web application using Express.js to help Network Engineers better view and manage their data.
+\end{itemize}
+}
+
+\cventry{March 2012 - November 2013}{Web Administrator}{Crescenta Valley High School Football Team}{La Crescenta}{}{
+%\textit{Part Time} - 
+\begin{itemize}
+\item Managed updates for the Crescenta Valley High School football team.
+\item Typical in-season work included adding scores to the website and updating rosters.
+\end{itemize}
+}
+
+\section{Programming Languages}
+\cvline{}{\small Python, Javascript, C, Haskell, Emacs Lisp, Bash Scripting, Java}
+\section{Tools}
+\cvline{}{\small Linux, \LaTeX, Git, SVN, Emacs}
+
+\section{Projects}
+\cvline{}{\textbf{Camera App for the Blind - 1st Place in SS12 Code for a Cause} \vfill
+Created a android camera app that is controlled through voice commands to help the blind take photos. Features included face detection for one, two or multiple people, detecting off-centered faces, level detection, sharing photos through social media, and applying filters. 
+}
+\cvline{}{\textbf{Lecture Sync - HackTech.} \href{http://lecture-sync.com}{lecture-sync.com}\vfill
+Implemented a web application to help students record audio from a lecture and pair slides to be able to recreate the presentation with audio, notes, and slides in sync. Tools used included, Node.js, MongoDB with Mongoose, hosted on an Amazon AWS EC2 instance.}
+%\cvline{}{\textbf{Collaborative Gaming - HackMIT.}
+%\vfill
+%Prototyped the idea of a collaborative HTML5 game where multiple users can attempt to control a player. Implemented using Firebase and Javascript with HTML5.}
+\cvline{}{\textbf{More projects at} \href{https://github.com/stefaneng}{github.com/stefaneng}}
+
+%\section{Professional Societies}
+%\cvline{}{IEEE and IEEE Computer Society}
+%\cvline{}{Association for Computing Machinery(ACM)}%
+
+%\section{Courses}
+%\cvline{Computer Science}{}
+%\cvline{Mathematics}{}
+
+\end{document}
