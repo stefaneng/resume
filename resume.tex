@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{moderncv}
+\documentclass[11pt,a4paper]{moderncv}
 \moderncvtheme[blue]{classic}
 \usepackage[utf8]{inputenc}
 \usepackage[scale=.6,margin=.5in,top=.3in]{geometry}
@@ -23,7 +23,7 @@
 \phone{(818) 331-5307}
 \email{stefaneng13@gmail.com}
 \address{3517 Brookhill Street}{La Crescenta, CA 91214}
-%\extrainfo{\href{https://github.com/stefaneng}{github.com/stefaneng}}
+\extrainfo{\href{https://github.com/stefaneng}{github.com/stefaneng}}
 
 
 \nopagenumbers{}
@@ -32,13 +32,21 @@
 \maketitle
 
 \section{Education}
-\cventry{2011--Current}{Mathematics B.S. \& Computer Science B.S., Expected Fall 2015}{\newline California State University}{Northridge}{GPA: \textbf{3.48}}{}
-\cventry{2007--2011}{High School Diploma}{\newline Crescenta Valley High School}{La Crescenta}{}{}
+\cventry{}{Mathematics B.S. \& Computer Science B.S., Expected Fall 2015}{\newline California State University}{Northridge}{GPA: \textbf{3.48}}{}
+%\cventry{2007--2011}{High School Diploma}{\newline Crescenta Valley High School}{La Crescenta}{}{}
 
 \section{Experience}
 
-\cventry{Sep 2013 - Current}{Software Developer, Intern}{Caltech/JPL}{Pasadena}{}{
-%\textit{Academic Part Time} - Software developer for the Microwave Limb Sounder(MLS) mission. 
+\cventry{April 2014 - Current}{Data Scientist}{Caltech/JPL}{Pasadena}{}{
+  \begin{itemize}
+  \item Lead a project to extract data, using Apache Tika, from word documents into MongoDB. Data was then displayed through a web application, written in AngularJS, to allow easy searching and downloading.
+  \item Developed a scraping program to archive a project's data. Addition scripts were developed to allow easy access to data.
+  \item Maintained an internal Wakari Enterprise server hosted on AWS.
+  \end{itemize}
+}
+
+\cventry{Sep 2013 - April 2014}{Software Developer}{Caltech/JPL}{Pasadena}{}{
+%\textit{Academic Part Time} - Software developer for the Microwave Limb Sounder(MLS) mission.
 \begin{itemize}
 \item Processed atmospheric data with Python and IDL.
 \item Maintained and improved the MLS website with PHP and Javascript.
@@ -48,18 +56,17 @@
 }
 
 \cventry{June 2013 - Aug 2013}{Data Scientist, Intern}{Caltech/JPL}{Pasadena}{}{
-%\textit{Intern} - 
+%\textit{Intern} -
 \begin{itemize}
-\item Assisted different projects and created many high visibility prototypes to help describe and visualize data to supplement research. 
+\item Assisted different projects and created many high visibility prototypes to help describe and visualize data to supplement research.
 \item Used cloud technologies such as Amazon AWS to store and process data.
-\item Weekly presentations of our data visualizations attracted many guests to our room including the director of JPL, Dr. Charles Elachi.
 \item Worked with R, Python, Perl, for data analysis and visualizations.
 \item Wrote a Node.js web application using Express.js to help Network Engineers better view and manage their data.
 \end{itemize}
 }
 
-\cventry{March 2012 - November 2013}{Web Administrator}{Crescenta Valley High School Football Team}{La Crescenta}{}{
-%\textit{Part Time} - 
+\cventry{Mar 2012 - Nov 2013}{Web Administrator}{Crescenta Valley High School Football Team}{La Crescenta}{}{
+%\textit{Part Time} -
 \begin{itemize}
 \item Managed updates for the Crescenta Valley High School football team.
 \item Typical in-season work included adding scores to the website and updating rosters.
@@ -72,11 +79,21 @@
 \cvline{}{\small Linux, \LaTeX, Git, SVN, Emacs}
 
 \section{Projects}
-\cvline{}{\textbf{Camera App for the Blind - 1st Place in SS12 Code for a Cause} \vfill
-Created a android camera app that is controlled through voice commands to help the blind take photos. Features included face detection for one, two or multiple people, detecting off-centered faces, level detection, sharing photos through social media, and applying filters. 
+\cvline{}{\textbf{CamAcc (Camera for the visually impaired)} \vfill
+\begin{itemize}
+\item Android camera app that is controlled through voice commands to help the visually impaired take photos
+\item 1st Place in 2014 SS12 Code for a Cause Competition
+\item Features included face detection for one, two or multiple people, detecting off-centered faces, level detection, sharing photos through social media, and applying filters
+\item Play store link: \href{https://play.google.com/store/apps/details?id=com.camacc}{https://play.google.com/store/apps/details?id=com.camacc}
+\end{itemize}
+\vspace{-5mm}
 }
-\cvline{}{\textbf{Lecture Sync - HackTech.} \href{http://lecture-sync.com}{lecture-sync.com}\vfill
-Implemented a web application to help students record audio from a lecture and pair slides to be able to recreate the presentation with audio, notes, and slides in sync. Tools used included, Node.js, MongoDB with Mongoose, hosted on an Amazon AWS EC2 instance.}
+\cvline{}{\textbf{Lecture Sync}
+  \begin{itemize}
+  \item Web application and Android app to help students recreate a lecture by pairing audio, notes, and slides in sync
+  \item Web application was built with Node.js, MongoDB with Mongoose, hosted on an Amazon AWS EC2.
+  \end{itemize}
+}
 %\cvline{}{\textbf{Collaborative Gaming - HackMIT.}
 %\vfill
 %Prototyped the idea of a collaborative HTML5 game where multiple users can attempt to control a player. Implemented using Firebase and Javascript with HTML5.}
