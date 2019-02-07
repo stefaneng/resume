@@ -1,0 +1,106 @@
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[blue]{classic}
+\usepackage[utf8]{inputenc}
+\usepackage[scale=.6,margin=1in,top=.5in]{geometry}
+\usepackage{multicol}
+\usepackage{natbib}
+
+\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}
+\AtBeginDocument{\recomputelengths}
+
+\AfterPreamble{
+    \hypersetup{
+      pdfauthor={Stefan Eng},
+      pdftitle={Stefan Eng Resume},
+      pdfsubject={Stefan Eng Resume},
+      colorlinks,
+      breaklinks,
+      urlcolor=blue
+    }
+}
+
+% personal data
+\firstname{Stefan}
+\familyname{Eng}
+\phone{070 640 15 13}
+\email{stefaneng13@gmail.com}
+% \address{Gothenburg}{La Crescenta, CA 91214}
+\address{Göteborg}{Råstensgatan 46, 416 54}
+\extrainfo{\href{https://github.com/stefaneng}{github.com/stefaneng}}
+
+\nopagenumbers{}
+
+\begin{document}
+\maketitle
+
+\section{Education}
+
+\cventry{2018--Current}{Master's Programme in Mathematical Sciences (Statistics)}{\newline University of Gothenburg \& Chalmers University of Technology}{\newline Gothenburg, Sweden}{\newline\textbf{Courses}: Linear Statistical Models, Computational Methods for Bayesian Statistics, Probability Theory, Machine Learning}{}
+
+\cventry{2011--2016}{Mathematics \& Computer Science Bachelor of Science}{\newline California State University}{Northridge, USA}{}{}
+
+\section{Work Experience}
+
+\cventry{August 2016 - June 2018}{Programmer/Analyst}{CRESST/UCLA}{Los Angeles}{}{
+  \begin{itemize}
+    \item Worked on research projects involving natural language processing (NLP) using Python with focus on similarity between sentences.
+    \item Created an interactive game using Angular2/Ionic where a student attempts to solve tasks by programming an on-screen vehicle and solve tasks to measure reasoning and problem solving.
+    \begin{itemize}
+      \item Conducted multiple data collections at high schools across Los Angeles where around one hundred students were involved in the data collection.
+      \item Event data was analyzed and exploratory analysis was conducted to summarize student's problem solving and reasoning abilities.
+  \end{itemize}
+  \end{itemize}
+}
+
+\cventry{April 2014 - May 2016}{Data Scientist, Intern}{Caltech/JPL}{Pasadena}{}{
+  \begin{itemize}
+  \item Managed data processing pipeline for Cassini and Dawn missions which includes Scala/Apache Spark ingest code and managing Elasticsearch cluster.
+  \item Worked on an API that provides a common interface to mission's telemetry data which supports data visualization dashboards.
+  \item Wrote parsers to bring old proprietary data formats into common and modern formats. Included XML parsing, web scraping, and Scala's parser combinators.
+  \item Lead a project to extract data, using Apache Tika, from word documents into MongoDB. Data was then displayed through a web application, written in AngularJS, to allow easy searching and downloading.
+  \end{itemize}
+}
+
+\cventry{Sep 2013 - April 2014}{Software Developer, Intern}{Caltech/JPL}{Pasadena}{}{
+\begin{itemize}
+\item Processed atmospheric data with Python.
+\item Automated repetitive tasks in data processing pipeline with bash and python scripts.
+\end{itemize}
+}
+
+\cventry{June 2013 - Aug 2013}{Data Scientist, Intern}{Caltech/JPL}{Pasadena}{}{
+%\textit{Intern} -
+\begin{itemize}
+\item Assisted different projects and created many high visibility prototypes to help describe and visualize data to supplement research.
+\item Worked with R, Python, for data analysis and visualizations.
+\end{itemize}
+}
+
+\section{Programming Languages}
+\cvline{}{\small Python, Javascript, R, Java}
+
+%\section{Tools}
+%\cvline{}{\small Linux, \LaTeX, Git, Docker}
+%\cvline{}{\textbf{Lecture Sync}
+%  \begin{itemize}
+%  \item Web application and Android app to help students recreate a lecture by pairing audio, notes, and slides in sync
+%  \item Web application was built with Node.js, MongoDB with Mongoose, hosted on an Amazon AWS EC2.
+%  \end{itemize}
+%}
+%\cvline{}{\textbf{Collaborative Gaming - HackMIT.}
+%\vfill
+%Prototyped the idea of a collaborative HTML5 game where multiple users can attempt to control a player. Implemented using Firebase and Javascript with HTML5.}
+
+%\section{Professional Societies}
+%\cvline{}{IEEE and IEEE Computer Society}
+%\cvline{}{Association for Computing Machinery(ACM)}%
+
+%\section{Courses}
+%\cvline{Computer Science}{}
+%\cvline{Mathematics}{}
+
+\nocite{*} % Write all references
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
