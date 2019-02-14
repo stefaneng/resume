@@ -1,8 +1,10 @@
 \documentclass[11pt,a4paper]{moderncv}
 \moderncvtheme[blue]{classic}
 \usepackage[utf8]{inputenc}
-\usepackage[scale=.6,margin=.5in,top=.3in]{geometry}
+\usepackage[scale=.6,margin=1in,top=.5in]{geometry}
 \usepackage{multicol}
+\usepackage{natbib}
+
 \AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}
 \AtBeginDocument{\recomputelengths}
 
@@ -20,11 +22,11 @@
 % personal data
 \firstname{Stefan}
 \familyname{Eng}
-\phone{(818) 331-5307}
+\phone{070 640 15 13}
 \email{stefaneng13@gmail.com}
-\address{3517 Brookhill Street}{La Crescenta, CA 91214}
+% \address{Gothenburg}{La Crescenta, CA 91214}
+\address{Göteborg}{Råstensgatan 46, 416 54}
 \extrainfo{\href{https://github.com/stefaneng}{github.com/stefaneng}}
-
 
 \nopagenumbers{}
 
@@ -32,30 +34,37 @@
 \maketitle
 
 \section{Education}
-\cventry{}{Mathematics B.S. \& Computer Science B.S., Expected Spring 2016}{\newline California State University}{Northridge}{GPA: \textbf{3.54}}{}
-%\cventry{2007--2011}{High School Diploma}{\newline Crescenta Valley High School}{La Crescenta}{}{}
 
-\section{Experience}
+\cventry{2018--Current}{Master's Programme in Mathematical Sciences (Statistics)}{\newline University of Gothenburg \& Chalmers University of Technology}{\newline Gothenburg, Sweden}{\newline\textbf{Courses}: Linear Statistical Models, Computational Methods for Bayesian Statistics, Probability Theory, Machine Learning}{}
 
-\cventry{April 2014 - Current}{Data Scientist, Intern}{Caltech/JPL}{Pasadena}{}{
+\cventry{2011--2016}{Mathematics \& Computer Science Bachelor of Science}{\newline California State University}{Northridge, USA}{}{}
+
+\section{Work Experience}
+
+\cventry{August 2016 - June 2018}{Programmer/Analyst}{CRESST/UCLA}{Los Angeles}{}{
   \begin{itemize}
-  \item Manage data processing pipeline for Cassini and Dawn missions which includes Scala/Apache Spark ingest code and managing Elasticsearch cluster.
+    \item Worked on research projects involving natural language processing (NLP) using Python with focus on similarity between sentences.
+    \item Created an interactive game using Angular2/Ionic where a student attempts to solve tasks by programming an on-screen vehicle and solve tasks to measure reasoning and problem solving.
+    \begin{itemize}
+      \item Conducted multiple data collections at high schools across Los Angeles where around one hundred students were involved in the data collection.
+      \item Event data was analyzed and exploratory analysis was conducted to summarize student's problem solving and reasoning abilities.
+  \end{itemize}
+  \end{itemize}
+}
+
+\cventry{April 2014 - May 2016}{Data Scientist, Intern}{Caltech/JPL}{Pasadena}{}{
+  \begin{itemize}
+  \item Managed data processing pipeline for Cassini and Dawn missions which includes Scala/Apache Spark ingest code and managing Elasticsearch cluster.
   \item Worked on an API that provides a common interface to mission's telemetry data which supports data visualization dashboards.
-  \item Wrote many parsers to bring old proprietary data formats into common and modern formats. Included XML parsing, web scraping, and Scala's parser combinators for tricky data formats.
-  \item Manage docker deployments to Apache Mesos, using Marathon, for visualization dashboard project.
+  \item Wrote parsers to bring old proprietary data formats into common and modern formats. Included XML parsing, web scraping, and Scala's parser combinators.
   \item Lead a project to extract data, using Apache Tika, from word documents into MongoDB. Data was then displayed through a web application, written in AngularJS, to allow easy searching and downloading.
   \end{itemize}
 }
 
-%   \item Developed a scraping program to archive a project's data. Addition scripts were developed to allow easy access to data.
-    % \item Scraped patent data and images for a visualization team to showcase JPL's patents.
-
 \cventry{Sep 2013 - April 2014}{Software Developer, Intern}{Caltech/JPL}{Pasadena}{}{
-%\textit{Academic Part Time} - Software developer for the Microwave Limb Sounder(MLS) mission.
 \begin{itemize}
-\item Processed atmospheric data with Python and IDL.
-% \item Maintained and improved the MLS website with PHP and Javascript.
-\item Automated repetitive tasks in data processing pipeline with bash scripts.
+\item Processed atmospheric data with Python.
+\item Automated repetitive tasks in data processing pipeline with bash and python scripts.
 \end{itemize}
 }
 
@@ -63,44 +72,15 @@
 %\textit{Intern} -
 \begin{itemize}
 \item Assisted different projects and created many high visibility prototypes to help describe and visualize data to supplement research.
-\item Used cloud technologies such as Amazon AWS to store and process data.
-\item Worked with R, Python, Perl, for data analysis and visualizations.
-\item Wrote a Node.js web application using Express.js to help Network Engineers better view and manage their data.
+\item Worked with R, Python, for data analysis and visualizations.
 \end{itemize}
 }
-
-%\cventry{Mar 2012 - Nov 2013}{Web Administrator}{Crescenta Valley High School Football Team}{La Crescenta}{}{
-%\textit{Part Time} -
-%\begin{itemize}
-%\item Managed updates for the Crescenta Valley High School football team.
-%\item Typical in-season work included adding scores to the website and updat%ing rosters.
-%\end{itemize}
-%}
 
 \section{Programming Languages}
-\cvline{}{\small Python, Javascript, R, Java, Scala}
-\section{Tools}
-\cvline{}{\small Linux, \LaTeX, Git, Docker}
+\cvline{}{\small Python, Javascript, R, Java}
 
-\section{Projects}
-\cvline{}{\textbf{Smart Trashcan} \vfill
-    \begin{itemize}
-    \item 1st Place in 2016 HackPoly Hackathon
-    \item Created a smart trashcan that detected when the trashcan was full which was displayed on a web application.
-    \item Leveraged AWS technologies such as Amazon Echo to allow for voice controlled updates.
-    \end{itemize}
-    \vspace{-5mm}
-}
-
-\cvline{}{\textbf{CamAcc (Camera for the visually impaired)} \vfill
-\begin{itemize}
-\item Android camera app that is controlled through voice commands to help the visually impaired take photos
-\item 1st Place in 2014 SS12 Code for a Cause Competition \href{http://ss12.info/}{ss12.info}
-\item Features included face detection for one, two or multiple people, detecting off-centered faces, level detection, sharing photos through social media, and applying filters
-\item Play store link: \href{https://play.google.com/store/apps/details?id=com.camacc}{play.google.com/store/apps/details?id=com.camacc}
-\end{itemize}
-\vspace{-5mm}
-}
+%\section{Tools}
+%\cvline{}{\small Linux, \LaTeX, Git, Docker}
 %\cvline{}{\textbf{Lecture Sync}
 %  \begin{itemize}
 %  \item Web application and Android app to help students recreate a lecture by pairing audio, notes, and slides in sync
@@ -110,7 +90,6 @@
 %\cvline{}{\textbf{Collaborative Gaming - HackMIT.}
 %\vfill
 %Prototyped the idea of a collaborative HTML5 game where multiple users can attempt to control a player. Implemented using Firebase and Javascript with HTML5.}
-\cvline{}{\textbf{More projects at} \href{https://github.com/stefaneng}{github.com/stefaneng}}
 
 %\section{Professional Societies}
 %\cvline{}{IEEE and IEEE Computer Society}
@@ -119,5 +98,9 @@
 %\section{Courses}
 %\cvline{Computer Science}{}
 %\cvline{Mathematics}{}
+
+\nocite{*} % Write all references
+\bibliographystyle{plain}
+\bibliography{references}
 
 \end{document}
